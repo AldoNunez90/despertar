@@ -1,0 +1,52 @@
+.container {
+  margin: 3vh 7vw;
+}
+
+.container__logo {
+  width: 200px;
+}
+
+.container__nav {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-item-align: self-end;
+      -ms-grid-row-align: self-end;
+      align-self: self-end;
+}
+
+.container__numeros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container__numeros__whatsapp {
+  width: 30px;
+  color: #297b97 !important;
+}
+
+.container__numeros__telefono {
+  width: 28px;
+}
+
+.container-fluid {
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+
+* {
+  font-family: 'Mulish', sans-serif;
+  font-weight: bold;
+  color: #297b97 !important;
+  font-size: 25px;
+}
