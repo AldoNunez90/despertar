@@ -1,11 +1,20 @@
 /* nosotros */
 h2 {
-  color: #190879 !important;
+  color: #100447 !important;
   font-weight: bold;
+  font-size: 4.5vw;
 }
 
 .container__nosotros {
   max-width: 80%;
+  text-align: left;
+  margin-bottom: 15vh;
+}
+
+.container__nosotros__slide {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 p {

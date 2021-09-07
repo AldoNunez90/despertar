@@ -1,5 +1,5 @@
 * {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
   font-weight: bold;
   color: #297b97 !important;
   font-size: 20px;
@@ -61,6 +61,7 @@
 }
 
 .container__fondo {
+  margin-bottom: 15vh;
   max-width: 80%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -100,7 +101,7 @@
   position: absolute;
   z-index: 100;
   top: 80%;
-  left: 30%;
-  color: #190879 !important;
+  left: 29.5%;
+  color: #100447 !important;
   font-size: 5vw;
 }
