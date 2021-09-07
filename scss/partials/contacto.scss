@@ -1,7 +1,44 @@
-.labelCorreo {
+
+h4 {
     color: #100447 !important;
+    font-weight: bold;
+    font-size: 3vw;
+    text-align: left;
 }
 
-.logo__contacto {
-    width: 20vw;
+.labelcontacto {
+    color: #100447 !important;
 }
+.container__btn {
+    text-align: -webkit-right;
+}
+.btnEnviar {
+    width: 40%;
+    color: #100447 !important;
+    font-weight: bold;
+    background-color: #397b92;
+    border: none;
+}
+.container__contacto { 
+    background-color: hsla(196, 44%, 40%, 0.74); 
+    width: 100%;
+    justify-content: center;
+    &__row {
+        max-height: 80%;
+        max-width: 80%;
+        margin: auto;
+        padding: 4vh 0;
+        text-align: start;
+    }
+    &__boxlogo {
+    align-self: center;
+        &__logo {
+        width: 90%;
+    }
+    }
+}
+
+.formulario {
+    text-align: left;
+}
+

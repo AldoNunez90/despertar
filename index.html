@@ -19,15 +19,16 @@
     <nav class="navbar navbar-expand-lg navbar-light fondoAzul">
       <div class="container-fluid">
         <!-- logo principal con link al inicio -->
-        <a class="navbar-brand" href="./index.html">
-           
-          <img src="./media/logo12.png" alt="clinica despertar" class="container__logo"></a>
-
+        <div>
+          <a class="navbar-brand" href="./index.html">
+           <img src="./media/logo12.png" alt="clinica despertar" class="container__logo">
+          </a>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="container__nav collapse navbar-collapse" mr-10 id="navbarNav">
+        <div class="container__nav collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="./html/nosotros.html">Inicio</a>
@@ -42,13 +43,13 @@
               <a class="nav-link" href="./html/contacto.html">Contacto</a>
             </li>
           </ul>
+        </div>
           <div class="container__numeros">
             <a href="https://api.whatsapp.com/send?phone=3413505026" target="blank">
               <img src="./media/IcoWhat2.png" alt="clinica despertar" class="container__numeros__whatsapp"></a>
               <a href="tel:3143505025" target="blank">
                 <img src="./media/Icotelefono2.png" alt="telefono" class="container__numeros__telefono"></a>
           </div>
-        </div>
       </div>
     </nav>
     
@@ -59,7 +60,7 @@
     <div class="hero">
       <div class="container__fondo">
         <div class="container__fondo__overlay"></div>
-        <div class="container__fondo__img"><img src="./media/imagen inicio .jpg" alt="fondo bosque" class="container__fondo__img__arboles"></div>
+        <div class="container__fondo__img"><img src="./media/imagenInicio.jpg" alt="fondo bosque" class="container__fondo__img__arboles"></div>
         <img src="./media/logo2.png" class="container__fondo__logo" alt="Logo princial">
         <h1>BIENVENIDOS</h1>
       </div>
@@ -141,14 +142,12 @@
         <div class="container__tratamientos__info">
           <div class="row">
             <div class="col-lg-6 col-sm-4">
-              <div class="capaOpacidad"></div>
-              <label class="tratamiento__1" for="terapia social">Terapia Social</label>
+              <label class="tratamiento tratamiento__1" for="terapia social">Terapia Social</label>
               <img src="./media/tratamiento1.jpg" alt="terapia social" class="container__tratamientos__info__foto">
             </div>
             
             <div class="col-lg-6 col-sm-4">
-              <div class="capaOpacidad"></div>
-              <label class="tratamiento__2" for="terapia familiar">Terapia Familiar</label>
+              <label class="tratamiento tratamiento__2" for="terapia familiar">Terapia Familiar</label>
               <img src="./media/tratamiento2.jpg" alt="terapia familiar" class="container__tratamientos__info__foto">
             </div>
         
@@ -157,13 +156,11 @@
             <div class="w-100 d-none d-md-block"></div>
         
             <div class="col-lg-6 col-sm-4">
-              <div class="capaOpacidad"></div>
-              <label class="tratamiento__3" for="terapias psiquiatricas">Terapias Psiquiatricas</label>
+              <label class="tratamiento tratamiento__3" for="terapias psiquiatricas">Terapias Psiquiatricas</label>
               <img src="./media/tratamiento3.jpg" alt="terapias psiquiatricas" class="container__tratamientos__info__foto">
             </div>
             <div class="col-lg-6 col-sm-4">
-              <div class="capaOpacidad"></div>
-              <label class="tratamiento__4" for="terapias psicológicas">Terapias Psicológicas</label>
+              <label class="tratamiento tratamiento__4" for="terapias psicológicas">Terapias Psicológicas</label>
               <img src="./media/tratamiento4.jpg" alt="" class="container__tratamientos__info__foto">
             </div>
 
@@ -181,52 +178,64 @@
               nos conducirán más rápidamente
               a la recuperación de la enfermedad.</p>
             </div>
-            <div class="col-lg-6 col-sm-5">
-              <div class="capaOpacidad"></div>
-              <label class="tratamiento__5" for="terapia psicoterapeutica">Terapia psicoterapeutica</label>
+            <div class="container col-lg-6 col-sm-5">
               <img src="./media/tratamiento5.jpg" alt="" class="container__tratamientos__info__foto">
+              <div class="centered">Terapia psicoterapeutica
+              </div>
             </div>
 
           </div>
         </div>
+        </div>
 
         <!-------------formulario de contacto----------->
         
-        <div class="hero">
-          <div class="container">
-            <div class="row">
-              <div>
-                <img src="./media/logo1.png" alt="x" class="logo__contacto">
-              </div>
-              
-              <div class="correo">
-              <h2>CONTACTENOS</h2>
-            <div class="">  
-              <form action="#">
-                <div class="mb-3">
-                  <label for="nombre" class="labelCorreo">Nombre</label>
-                  <input type="text" class="form-control" id="nombre">
+        <div class="text-center container__contacto">
+          <div class="row container__contacto__row">
+            <div class="col-lg-8 container__contacto__boxlogo">
+              <img src="./media/logo12.png" alt="logo principal" class="container__contacto__boxlogo__logo">
+            </div>
+            
+            <div class="col-lg-4">
+              <h4>CONTACTENOS</h4>
+              <form action="mailto:aldo.andres.nunez@gmail.com" method="GET" class="formulario">
+                
+                <label for="nombre" class="labelcontacto">Nombre</label>
+                <input type="text" class="form-control mb-3" id="nombre">
+
+                <label for="email" class="labelcontacto">E-mail</label>
+                <input type="email" class="form-control mb-3">
+
+                <label for="mensaje" class="labelcontacto">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" class="form-control mb-3" cols="30" rows="6"></textarea>
+                <div class="container__btn">
+                  <button type="submit" class="form-control btnEnviar">ENVIAR</button>
                 </div>
-                <div class="mb-3">
-                  <label for="correo" class="labelCorreo">Correo electrónico</label>
-                  <input type="email" class="form-control" id="correo">
-                </div>
-        
-                <div class="mb-3">
-                  <textarea class="form-control" id="texto" rows="3"></textarea>
-                </div>
-               
-                <div>
-                <button class="btn btn-primary" type="submit">Enviar</button>
-              </div>
-            </div>       
               </form>
+            </div>
+            </div>
+            
+            
+
+
+        
+              
 
 
 
 
       </div>
 
+
+      <!-----------------footer----------------->
+      <div class="container__footer">
+        <div class="container__footer__logo">
+          <img src="./media/logo2.png" alt="logo cierre" class="container__footer__logo__cierre">
+          <p class="container__footer__texto">Mayagüez 747, Tortuguitas, Buenos Aires
+Teléfono - 011-1522770776
+E-mail - Clinicadespertarg@gmail.com</p>
+        </div>
+      </div>
 
 
     

@@ -9,7 +9,7 @@ h3 {
     font-size: 4.5vw;
     text-align: left;
 }
-label {
+.tratamiento {
     color: white !important;
     font-weight: bold;
     font-size: 2vw;
@@ -21,7 +21,7 @@ label {
     transform: translate(11vw, 36vh)
 }
 
-.tratamiento__3, .tratamiento__4, {
+.tratamiento__3, .tratamiento__4 {
     transform: translate(8vw, 36vh)
 }
 
@@ -55,14 +55,46 @@ label {
     padding-top: 2vw
 }
 
-.capaOpacidad {
-    background-color: #100447;
-    opacity: 0.3;
-    position: absolute;
-    z-index: 10;
-    height: 68vh;
-    width: 34.5vw;
-    transform: translateX(2vw) translateY(5.3vh);
-    border-radius: 10px;
-}
 
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

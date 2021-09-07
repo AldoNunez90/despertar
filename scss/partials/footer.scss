@@ -1,0 +1,23 @@
+/* 
+
+Mayagüez 747, Tortuguitas, Buenos Aires
+Teléfono - 011 22770776
+E-mail - Clinicadespertarg@gmail.com
+
+capa de color #100447 con opacidad del 75% el texto tiene la tipo Century Gothic bold 18pt centrado color blanco
+*/
+.container__footer {
+    background-color: hsla(251, 89%, 15%, 0.75);
+    margin-top: 5vh;
+    &__logo {
+        padding: 2vh;
+    }
+    &__logo__cierre {
+        width: 100px;
+    }
+    &__texto {
+        color: white !important;
+        text-align: center;
+        -webkit-user-modify: read-write-plaintext-only
+    }
+}
