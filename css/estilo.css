@@ -52,15 +52,6 @@ h3 {
   z-index: 150;
   position: absolute; }
 
-.tratamiento__1, .tratamiento__2 {
-  transform: translate(11vw, 36vh); }
-
-.tratamiento__3, .tratamiento__4 {
-  transform: translate(8vw, 36vh); }
-
-.tratamiento__5 {
-  transform: translate(7vw, 36vh); }
-
 .container__tratamientos__parrafo {
   color: #100447 !important;
   font-weight: normal;
@@ -88,36 +79,35 @@ h3 {
   text-align: center;
   color: white; }
 
-/* Bottom left text */
 .bottom-left {
   position: absolute;
   bottom: 8px;
   left: 16px; }
 
-/* Top left text */
 .top-left {
   position: absolute;
   top: 8px;
   left: 16px; }
 
-/* Top right text */
 .top-right {
   position: absolute;
   top: 8px;
   right: 16px; }
 
-/* Bottom right text */
 .bottom-right {
   position: absolute;
   bottom: 8px;
   right: 16px; }
 
-/* Centered text */
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.95vw; }
 
 * {
   font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;

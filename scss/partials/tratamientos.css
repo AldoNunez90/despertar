@@ -9,27 +9,12 @@ h3 {
   text-align: left;
 }
 
-label {
+.tratamiento {
   color: white !important;
   font-weight: bold;
   font-size: 2vw;
   z-index: 150;
   position: absolute;
-}
-
-.tratamiento__1, .tratamiento__2 {
-  -webkit-transform: translate(11vw, 36vh);
-          transform: translate(11vw, 36vh);
-}
-
-.tratamiento__3, .tratamiento__4 {
-  -webkit-transform: translate(8vw, 36vh);
-          transform: translate(8vw, 36vh);
-}
-
-.tratamiento__5 {
-  -webkit-transform: translate(7vw, 36vh);
-          transform: translate(7vw, 36vh);
 }
 
 .container__tratamientos__parrafo {
@@ -58,14 +43,44 @@ label {
   padding-top: 2vw;
 }
 
-.capaOpacidad {
-  background-color: #100447;
-  opacity: 0.3;
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
   position: absolute;
-  z-index: 10;
-  height: 68vh;
-  width: 34.5vw;
-  -webkit-transform: translateX(2vw) translateY(5.3vh);
-          transform: translateX(2vw) translateY(5.3vh);
-  border-radius: 10px;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 100;
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.95vw;
 }
