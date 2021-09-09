@@ -17,7 +17,14 @@
         &__nav {
             justify-content: space-between;
             margin-left: 8vw;
-            align-self: self-end;   
+            align-self: self-end; 
+              
+        }
+        &__navbar {
+            position: fixed;
+            width: 90%;
+            background-color: white;
+            z-index: 1000;
         }
         &__numeros {
             display: flex;

@@ -1,6 +1,29 @@
 
 .container__tratamientos {
     max-width: 80%;
+    &__parrafo {
+      color: #100447 !important;
+      font-weight: normal;
+      font-size: 2vw;
+    }
+      &__info__foto {
+        width: 90%;
+        border-radius: 10px;
+        margin: 2.5vw 0;
+        z-index: 1;
+        position: relative;
+    }
+    &__info__parrafo {
+      font-weight: normal;
+      color: #100447 !important;
+      font-size: 2vw;
+      width: 90%;
+      padding-top: 2vw
+    }
+
+}
+span {
+  font-size: 2vw;
 }
 
 h3 {
@@ -17,37 +40,16 @@ h3 {
     position: absolute;
 }
 
-.container__tratamientos__parrafo {
-    color: #100447 !important;
-    font-weight: normal;
-    font-size: 2vw;
-}
+
 
 .row {
     overflow: hidden;
-}
-
-.container__tratamientos__info__foto {
-    width: 90%;
-    border-radius: 10px;
-    margin: 2.5vw 0;
-    z-index: 1;
-    position: relative;
-}
-
-.container__tratamientos__info__parrafo {
-    font-weight: normal;
-    color: #100447 !important;
-    font-size: 1.95vw;
-    width: 90%;
-    padding-top: 2vw
 }
 
 
 
 .container {
     position: relative;
-    text-align: center;
     color: white;
   }
   
@@ -84,5 +86,33 @@ h3 {
     z-index: 100;
     color: white !important;
     font-weight: bold;
-    font-size: 1.95vw;
+    font-size: 4vw;
   }
+
+  /* opciones modal*/
+  .btn:focus{
+    display: none;
+  }
+  .centered:hover {
+    color: #397b92 !important;
+  }
+
+  h5 {
+    font-size: 4vw;
+    color: white !important;
+    text-transform: uppercase;
+  }
+  b {
+    color: white !important;
+  }
+  .modal-content {
+    background-color: #297b97;
+  }
+  .textoModal {
+    color: white !important;
+    justify-self: left;
+    font-weight: normal;
+  }
+.btn-tratamientos {
+  background-color: white;
+}

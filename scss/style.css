@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* nosotros */
 h2 {
   color: #100447 !important;
@@ -22,6 +23,33 @@ p {
   font-size: 1.5vw;
 }
 
+/* 
+
+Mayagüez 747, Tortuguitas, Buenos Aires
+Teléfono - 011 22770776
+E-mail - Clinicadespertarg@gmail.com
+
+capa de color #100447 con opacidad del 75% el texto tiene la tipo Century Gothic bold 18pt centrado color blanco
+*/
+.container__footer {
+  background-color: rgba(17, 4, 72, 0.75);
+  margin-top: 5vh;
+}
+
+.container__footer__logo {
+  padding: 2vh;
+}
+
+.container__footer__logo__cierre {
+  width: 100px;
+}
+
+.container__footer__texto {
+  color: white !important;
+  text-align: center;
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
 .container__tratamientos {
   max-width: 80%;
 }
@@ -33,27 +61,12 @@ h3 {
   text-align: left;
 }
 
-label {
+.tratamiento {
   color: white !important;
   font-weight: bold;
   font-size: 2vw;
   z-index: 150;
   position: absolute;
-}
-
-.tratamiento__1, .tratamiento__2 {
-  -webkit-transform: translate(11vw, 36vh);
-          transform: translate(11vw, 36vh);
-}
-
-.tratamiento__3, .tratamiento__4 {
-  -webkit-transform: translate(8vw, 36vh);
-          transform: translate(8vw, 36vh);
-}
-
-.tratamiento__5 {
-  -webkit-transform: translate(7vw, 36vh);
-          transform: translate(7vw, 36vh);
 }
 
 .container__tratamientos__parrafo {
@@ -82,16 +95,46 @@ label {
   padding-top: 2vw;
 }
 
-.capaOpacidad {
-  background-color: #100447;
-  opacity: 0.3;
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
   position: absolute;
-  z-index: 10;
-  height: 68vh;
-  width: 34.5vw;
-  -webkit-transform: translateX(2vw) translateY(5.3vh);
-          transform: translateX(2vw) translateY(5.3vh);
-  border-radius: 10px;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 100;
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.95vw;
 }
 
 * {
@@ -166,8 +209,8 @@ label {
 }
 
 .container__fondo__overlay {
-  background-color: whitesmoke;
-  opacity: 0.44;
+  background-color: white;
+  opacity: 0.39;
   width: 100%;
   height: 564px;
   position: absolute;
@@ -202,10 +245,55 @@ label {
   font-size: 5vw;
 }
 
-.labelCorreo {
+h4 {
+  color: #100447 !important;
+  font-weight: bold;
+  font-size: 3vw;
+  text-align: left;
+}
+
+.labelcontacto {
   color: #100447 !important;
 }
 
-.logo__contacto {
-  width: 20vw;
+.container__btn {
+  text-align: -webkit-right;
+}
+
+.btnEnviar {
+  width: 40%;
+  color: #100447 !important;
+  font-weight: bold;
+  background-color: #397b92;
+  border: none;
+}
+
+.container__contacto {
+  background-color: rgba(57, 123, 147, 0.74);
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container__contacto__row {
+  max-height: 80%;
+  max-width: 80%;
+  margin: auto;
+  padding: 4vh 0;
+  text-align: start;
+}
+
+.container__contacto__boxlogo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container__contacto__boxlogo__logo {
+  width: 90%;
+}
+
+.formulario {
+  text-align: left;
 }

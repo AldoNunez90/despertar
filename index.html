@@ -17,7 +17,7 @@
     <header>
       <a name="inicio"></a>
       <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light fondoAzul">
+    <nav class="navbar navbar-expand-lg navbar-light fondoAzul container__navbar">
       <div class="container-fluid">
         <!-- logo principal con link al inicio -->
         <div>
@@ -38,7 +38,7 @@
               <a class="nav-link" href="#nosotros">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#tratamientos">Tratamiento</a>
+              <a class="nav-link" href="#tratamientos">Tratamientos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#message">Contacto</a>
@@ -73,7 +73,7 @@
         <div class="container__nosotros__texto col-lg-5">
           <h2>NOSOTROS</h2>
           <p>Centro Renacer brinda un servicio para responder a las necesidades más urgentes de las personas que padecen problemas de todo tipo.
-            Nuestro programa es a base de estrategias que incluye la casa de convivencia, logrando al mismo tiempo en que se recupera el paciente, el reacomodo de la familia.
+            Somos una comunidad de puertas abiertas, libre de drogas y alcohol. Ofrecemos tratamiento para pacientes de ambos sexos desde los 14 años en adelante.
             Para esto es fundamental el apoyo y acompañamiento de la familia, logrando así una mejor contención en el duro camino a la recuperación.
           </p>
         </div>
@@ -139,18 +139,74 @@
       <div class="container__tratamientos">
         <div>
           <h3>TRATAMIENTOS</h3>
-          <p class="container__tratamientos__parrafo">Es sabido que cuando nos enfrentamos con un paciente afectado por la enfermedad, en general su red familiar, su pareja o sus vínculos más cercanos también lo están. Es por esto de suma importancia para el paciente, contar con un entorno comprometido que lo acompañe durante su rehabilitación y reconozca su coparticipación en el problema</p>
+          <p class="container__tratamientos__parrafo">Todos nuestros tratamientos son de asistencia voluntaria y, en caso de ser necesario, tras un exhaustivo diagnóstico diferencial, implementando tratamientos.<br>
+            Contamos con un equipo terapéutico interdisciplinario altamente capacitado, conformado por psicólogos, psiquiatras, médicos, docentes, trabajadores sociales, operadores socio-terapéuticos, talleristas, entre otros.</p>
         </div>
         
         <div class="container__tratamientos__info">
           <div class="row">
             <div class="container col-lg-6 col-sm-4">
-              <div class="centered">Terapia Social</div>
+              <div>
+                <button type="button" class="centered btn" data-bs-toggle="modal" data-bs-target="#social">
+                  Terapia Social
+                </button>
+                
+                <div class="modal fade" id="social" tabindex="-1" aria-labelledby="modalsocial" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <h5 class="modal-title" id="modalsocial">Terapia Social</h5>
+                         <p class="textoModal">
+                         Esencialmente, la <b>socioterapia</b> es una nueva alternativa de intervención profesional y una nueva terapia alternativa de atención, para personas y grupos con problemas interpersonales e intragrupales de índole social, es decir, de convivencia. <br><br>
+                         
+                         Consiste en una <b>estrategia socio-pedagógica</b> para el cambio como arte de coordinar las acciones y de obrar para alcanzar un objetivo de carácter promocional, preventivo y asistencial. Mediante esta estrategia logramos en el destinatario concretar cambios cognoscitivos puntuales y brindarle una adecuada capacitación social que le posibilite una saludable evolución personal y social. <br><br>
+                         
+                         En <b>socioterapia</b> se desarrolla el área consciente. Es por ello que empleamos estrategias <b>socio-pedagógicas</b>. Es decir, capacitamos al paciente para superar la situación <b>socio-problemática</b> que lo tiene imposibilitado para evolucionar en sus relaciones interpersonales. El paciente aprende con esas estrategias a convivir de modo saludable en sociedad y a desarrollar y emplear sus propios recursos para edificar una vida con bienestar en los aspectos familiares y sociales, o sea, con-vivenciales. <br><br>
+                         
+                         La historia personal es el resultado de la suma de decisiones de la vida de una persona. Las decisiones, que representan las actitudes, ideas, creencias, valores y aptitudes personales, por un lado y las situaciones particulares vivenciadas, por el otro. Con estos elementos trabaja el terapeuta social en la <b>reconstrucción de un nuevo proyecto de vida</b>, aportando información y conocimiento que facilite el desarrollo de nuevas aptitudes y habilidades sociales. Se trata de una revisión de su historia que le permita al individuo extraer hechos y datos positivos y negativos. Fortaleciendo los primeros y modificando o cambiando los segundos.
+                        </p>
+                        <button type="button" class="btn btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
+                      </div>
+                      
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
               <img src="./media/tratamiento1.jpg" alt="terapia social" class="container__tratamientos__info__foto">
             </div>
             
             <div class="container col-lg-6 col-sm-4">
-              <div class="centered">Terapia Familiar</div>
+              <div>
+                <button type="button" class="centered btn" data-bs-toggle="modal" data-bs-target="#familiar">
+                  Terapia Familiar
+                </button>
+                
+                <div class="modal fade" id="familiar" tabindex="-1" aria-labelledby="modalfamiliar" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <h5 class="modal-title" id="modalfamiliar">Terapia Familiar</h5>
+                         <p class="textoModal">
+                          La <b>terapia familiar</b> aborda los problemas generados en el contexto de las relaciones familiares o con personas significativas en la vida de las personas. Se trata de un reconocido enfoque psicoterapéutico dirigido principalmente al sistema familiar como unidad social. <br><br>
+
+                          Los principales objetivos de la terapia familiar son: <br><br>
+                          • La mejora del funcionamiento de la familia a diferentes niveles. <br>
+                          • El aumento de la comprensión mutua y el apoyo emocional entre los miembros de la misma. <br>
+                          • El desarrollo de estrategias de afrontamiento y habilidades de resolución de problemas ante diferentes dilemas y situaciones de la vida. <br><br>
+                          
+                          La terapia familiar y la práctica sistémica está especialmente indicada cuando el objetivo es mejorar la capacidad de los miembros de la familia para apoyarse mutuamente. Posibilitar que los miembros de la familia puedan usar más eficientemente sus recursos de apoyo puede ser vital para ayudarles a gestionar las fases de transición del desarrollo familiar o los acontecimientos vitales estresantes tales como una enfermedad grave. <br><br>
+                          
+                          En el caso de los problemas de consumo, la familia puede asistir a terapia familiar mientras que la persona con problemas de consumo participa en un tratamiento residencial. A veces, la familia puede participar en terapia familiar, incluso cuando la persona con este problema no buscó un tratamiento propio.                          
+                        </p>
+                        <button type="button" class="btn btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
+                      </div>
+                      
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
               <img src="./media/tratamiento2.jpg" alt="terapia familiar" class="container__tratamientos__info__foto">
             </div>
         
@@ -159,33 +215,135 @@
             <div class="w-100 d-none d-md-block"></div>
         
             <div class="container col-lg-6 col-sm-4">
-              <div class="centered">Terapias Psiquiatricas</div>
+              <div>
+                <button type="button" class="centered btn" data-bs-toggle="modal" data-bs-target="#psiquiatra">
+                  Terapias Psiquiátricas
+                </button>
+                
+                <div class="modal fade" id="psiquiatra" tabindex="-1" aria-labelledby="modalpsiquiatra" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <h5 class="modal-title" id="modalpsiquiatra">Terapias Psiquiátricas</h5>
+                         <p class="textoModal">
+                          El <b>Psiquiatra</b> es un <b>especialista</b> en el campo de la salud mental y está capacitado no sólo a dar terapia y tratamiento, sino para guiarte hacia costumbres saludables. Tiene como elementos fundamentales: la prevención, el diagnóstico y el tratamiento de dichos trastornos. <br><br>
+
+                          En el caso de los principales trastornos de la salud mental, la mayoría de los estudios sugieren que un enfoque terapéutico que contemple la utilización conjunta de fármacos y psicoterapia resultará más eficaz que cualquiera de los métodos de tratamiento empleados por separado.                          
+                        </p>
+                        <button type="button" class="btn btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
+                      </div>
+                      
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
               <img src="./media/tratamiento3.jpg" alt="terapias psiquiatricas" class="container__tratamientos__info__foto">
             </div>
             <div class="container col-lg-6 col-sm-4">
-              <div class="centered">Terapias Psicológicas</div>
+              <div>
+                <button type="button" class="centered btn" data-bs-toggle="modal" data-bs-target="#psicologica">
+                  Terapias Psicológicas
+                </button>
+                
+                <div class="modal fade" id="psicologica" tabindex="-1" aria-labelledby="modalpsicologica" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <h5 class="modal-title" id="modalpsicologica">TERAPIAS PSICOLÓGICAS</h5>
+                         <p class="textoModal">
+                          A través de la <b>terapia psicológica</b> los terapeutas podemos acercarnos a evaluar y comprender cuando estamos frente a un paciente cuál es su <b>Cognición</b> (Pensamiento/Idea/Imagen/Creencia/Atribución) y como todas ellas se combinan a través de un conjunto organizado de pensamiento que llamamos creencias, que están conectadas a emociones y eventos en la vidas personal. <br><br>
+
+                          Asimismo,  el paciente es orientado para aprender a identificar cómo piensa, siente y actúa, lo cual impulsa a cambios en ciertos patrones de pensamientos que atrapan a los individuos en conflictos emocionales que afectan su calidad de vida. <br><br>
+                          
+                          Esta tiene por finalidad el diagnóstico, tratamiento, resolución y prevención de problemas de salud mental, emocionales o de conducta. Por tanto, la aplicación de las diferentes técnicas de psicología clínica sobre un paciente es lo que denominamos psicoterapia.                          
+                        </p>
+                        <button type="button" class="btn btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
+                      </div>
+                      
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
               <img src="./media/tratamiento4.jpg" alt="" class="container__tratamientos__info__foto">
             </div>
 
             <div class="w-100 d-none d-md-block"></div>
 
             <div class="container col-lg-6 col-sm-4">
-            <p class="container__tratamientos__info__parrafo">En nuestra comunidad colaboramos
+            <p class="container__tratamientos__info__parrafo">
+              En nuestra comunidad colaboramos
               con la recuperación de los familiares,
-              tanto como la de los pacientes.
+              tanto como la de los pacientes. <br>
               Tenemos la convicción de que
               los cambios en la actitud de la familia
               favorecerán el progreso de los
-              mismos y esto sumando las herra
-              mientas aportadas por Centro Renacer
+              mismos y esto sumando las herramientas aportadas por <span>Clínica Despertar</span>
               nos conducirán más rápidamente
               a la recuperación de la enfermedad.</p>
             </div>
             <div class="container col-lg-6 col-sm-5">
               <img src="./media/tratamiento5.jpg" alt="" class="container__tratamientos__info__foto">
-              <div class="centered">Terapia psicoterapeutica
+              <div>
+                <button type="button" class="centered btn" data-bs-toggle="modal" data-bs-target="#psicoterapeuticas">
+                  Terapias Psicoterapéuticas
+                </button>
+                
+                <div class="modal fade" id="psicoterapeuticas" tabindex="-1" aria-labelledby="modalpsicoterapeuticas" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <h5 class="modal-title" id="modalpsicoterapeuticas">Terapias psicoterapéuticas</h5>
+                         <p class="textoModal">
+                          La <b> psicoterapia </b> es una herramienta efectiva para el tratamiento de problemas emocionales o psicológicos que afectan tu calidad de vida, ayudándote a descubrir tus potencialidades e identificar posibles caminos a seguir con nuevas herramientas y habilidades.<br>
+                          <br>
+                          <b>
+                            Terapia Individual<br>
+                          </b>
+                          Se sugiere un encuentro con un psicoterapeuta, generalmente una vez por semana, dependiendo del estado del paciente.
+                          El tratamiento está orientado a tratar problemas psicológicos para mejorar la calidad de vida y las relaciones interpersonales.
+                          Los trastornos más frecuentes son:<br><br>
+                          <b>
+                            Ansiedad<br>
+                          </b>
+                          La ansiedad es un estado emocional normal de los seres humanos relacionada con la adaptación a nuestro contexto.
+                          Si este estado comienza a perturbar tu calidad de vida, perdura en el tiempo y te afecta de manera leve o aguda es conveniente que hagas una consulta con un psicólogo.<br><br>
+                          <b>
+                            Depresión<br>
+                          </b>
+                          La depresión es un trastorno psicológico que genera mucho sufrimiento y afecta las actividades de la vida cotidiana, las relaciones interpersonales y la relación con uno mismo.<br><br>
+                          <b>
+                            Trauma<br>
+                          </b>
+                          Se suele entender como trauma psíquico a toda experiencia que te produce malestar emocional y puede dejar secuelas.<br><br>
+                          <b>
+                            Estrés<br>
+                          </b>
+                          Es el conjunto de respuestas fisiológicas que preparan al organismo para la acción frente a un agente estresor.
+                          Cuando el estrés forma parte de tu vida diaria y te acostumbrás a él, influye en tu salud y en tu vida en general.
+                          Una situación aguda de estrés puede manifestarse tanto a nivel físico, emocional o en la conducta.<br><br>
+                          <b>
+                            Angustia<br>
+                          </b>
+                          Es una sensación emocional displacentera que pone en estado de alerta al organismo, generando cambios en el estado corporal (sudoración, taquicardia, etc.).
+                          La angustia es una sensación universalmente experimentada por el ser humano, pero puede ser adaptativa o no, dependiendo de la magnitud con que se presente. Cuando la angustia se sostiene en el tiempo, es de gran intensidad y refleja una respuesta no adaptativa respecto de la situación que se presenta, pueden aparecer crisis de angustia o ataques de pánico.<br>                          
+                        </p>
+                        <button type="button" class="btn btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
+                      </div>
+                      
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+                
+                </div>
               </div>
             </div>
+            
+
 
           </div>
         </div>
@@ -201,7 +359,7 @@
             
             <div class="col-lg-4">
               <h4>CONTACTENOS</h4>
-              <form action="mailto:aldo.andres.nunez@gmail.com" method="GET" class="formulario">
+              <form action="·" method="GET" class="formulario">
                 
                 <label for="nombre" class="labelcontacto">Nombre</label>
                 <input type="text" class="form-control mb-3" id="nombre">
@@ -232,7 +390,7 @@
 
       <!-----------------footer----------------->
       <div class="container__footer">
-        <div class="container__footer__logo">
+        <div class="container__footer__logo text-center">
           <img src="./media/logo2.png" alt="logo cierre" class="container__footer__logo__cierre">
           <p class="container__footer__texto">Mayagüez 747, Tortuguitas, Buenos Aires
 Teléfono - 011-1522770776

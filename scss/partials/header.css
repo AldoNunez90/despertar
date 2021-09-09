@@ -26,6 +26,13 @@
       align-self: self-end;
 }
 
+.container__navbar {
+  position: fixed;
+  width: 90%;
+  background-color: white;
+  z-index: 1000;
+}
+
 .container__numeros {
   display: -webkit-box;
   display: -ms-flexbox;
