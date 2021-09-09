@@ -235,3 +235,25 @@ h4 {
 
 .formulario {
   text-align: left; }
+
+@media only screen and (min-width: 1300px) {
+  .bienvenidos {
+    top: 13vh; }
+  .container__nav {
+    margin-left: 11vw; }
+  .container__fondo {
+    margin-bottom: 8vh; }
+  .container__nosotros {
+    margin-bottom: 8vh; } }
+
+@media only screen and (max-width: 992px) {
+  .nav__colapsado {
+    transform: translateX(370%); }
+  .container__logo {
+    transform: translateX(100%); }
+  .container__numeros {
+    transform: translateX(-510%); } }
+
+@media only screen and (max-width: 600px) {
+  .nav__colapsado, .container__logo, .container__numeros {
+    transform: none; } }
