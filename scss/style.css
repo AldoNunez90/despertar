@@ -340,7 +340,7 @@ h4 {
     top: 13vh;
   }
   .container__nav {
-    margin-left: 11vw;
+    margin-left: 12vw;
   }
   .container__fondo {
     margin-bottom: 8vh;
@@ -351,23 +351,93 @@ h4 {
 }
 
 @media only screen and (max-width: 992px) {
-  .nav__colapsado {
-    -webkit-transform: translateX(370%);
-            transform: translateX(370%);
+  header {
+    text-align: center;
   }
-  .container__logo {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+  .container {
+    text-align: -webkit-center;
   }
-  .container__numeros {
-    -webkit-transform: translateX(-510%);
-            transform: translateX(-510%);
+  .navbar-toggler {
+    display: none;
+  }
+  .container__navbar {
+    position: relative;
+  }
+  .container__fondo {
+    margin: 0;
+  }
+  .container__fondo__img {
+    top: 0;
+    margin-bottom: 2vh;
+  }
+  p, .container__tratamientos__parrafo, .container__tratamientos__info__parrafo, span {
+    font-size: 2.5vw;
+  }
+  .bienvenidos {
+    top: 10vh;
+  }
+  .container__nosotros {
+    margin-bottom: 4vh;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .nav__colapsado, .container__logo, .container__numeros {
-    -webkit-transform: none;
-            transform: none;
+  .navbar-toggler {
+    display: none;
+  }
+  .container__numeros__whatsapp {
+    width: 25px;
+  }
+  .container__numeros__telefono {
+    width: 23px;
+  }
+  .container__navbar {
+    position: unset;
+    display: inline;
+  }
+  .navbar-light .navbar-toggler {
+    color: #297b97 !important;
+  }
+  .container__nav {
+    text-align: center;
+    margin: 0;
+  }
+  .container__nosotros {
+    margin-bottom: 4vh;
+  }
+  .container__fondo {
+    margin-bottom: 4vh;
+    max-width: 80%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    content-visibility: auto;
+    height: 180px;
+  }
+  .container__fondo__img {
+    top: 0;
+  }
+  .bienvenidos {
+    top: 7vh;
+  }
+  .container__fondo__overlay {
+    height: 176px;
+  }
+  p, .container__tratamientos__parrafo, .container__tratamientos__info__parrafo {
+    font-size: 2.5vw;
+  }
+  h4 {
+    font-size: 7vw;
+    text-align: center;
+  }
+  .container__contacto__boxlogo__logo {
+    margin-bottom: 1vh;
+  }
+  .container__footer__texto {
+    font-size: 3vw;
+  }
+  .container__footer__logo__cierre {
+    width: 120px;
   }
 }

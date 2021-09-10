@@ -154,7 +154,7 @@
                 </button>
                 
                 <div class="modal fade" id="social" tabindex="-1" aria-labelledby="modalsocial" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-dialog modal-dialog-centered modal-lg show">
                     <div class="modal-content">
                       <div class="modal-body">
                         <h5 class="modal-title" id="modalsocial">Terapia Social</h5>
@@ -359,23 +359,26 @@
         <img src="./media/logo12.png" alt="logo principal" class="container__contacto__boxlogo__logo">
       </div>
       
-      <div class="col-lg-4">
-        <h4>CONTACTENOS</h4>
-        <form action="·" method="GET" class="formulario">
-          
-          <label for="nombre" class="labelcontacto">Nombre</label>
-          <input type="text" class="form-control mb-3" id="nombre">
-          
-          <label for="email" class="labelcontacto">E-mail</label>
-          <input type="email" class="form-control mb-3">
-          
-          <label for="mensaje" class="labelcontacto">Mensaje</label>
-          <textarea name="mensaje" id="mensaje" class="form-control mb-3" cols="30" rows="6"></textarea>
+      <form action="send.php" method="POST" class="form col-lg-4">
+        <div >
+            <h4>CONTACTENOS</h4>
+          <div>
+            <label for="nombre" class="labelcontacto">Nombre</label>
+            <input type="text" name="nombre" class="form-control mb-3" id="nombre">
+          </div>
+          <div>
+            <label for="email" class="labelcontacto">E-mail</label>
+            <input type="email" name="email"  class="form-control mb-3">
+          </div>
+          <div>
+            <label for="mensaje" class="labelcontacto">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" name="mensaje" class="form-control mb-3" cols="30" rows="6"></textarea>
+          </div>
           <div class="container__btn">
             <button type="submit" class="form-control btnEnviar">ENVIAR</button>
           </div>
+        </div>
         </form>
-      </div>
     </div>
     
     
