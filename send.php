@@ -2,7 +2,6 @@
 error_reporting(0);
 $nombre = $_POST['nombre'];
 $correo_electronico= $_POST['email'];
-$poblacion = $_POST['poblacion'];
 $mensaje=$_POST['mensaje'];
 $header = 'From: ' . $mail . ", de la poblacion ".$poblacion."\r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";

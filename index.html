@@ -3,15 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="image/png" href="./media/iconopagina.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    
-
-
     <link rel="stylesheet" href="./css/estilo.css">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <title></title>
+    <meta name="description" content="Fundación despertar - Bienvenidos">
+    <meta name="keywords" content="FUNDACION, DESPERTAR, CLINICA, TERAPIA, ACOMPAÑAMIENTO, FAMILIAR, NOSOTROS, TRATAMIENTOS, TERAPIA SOCIAL, TERAPIA FAMILIAR, TERAPIA PSIQUIATRICA, TERAPIA PSICOLOGICA, TORTUGUITAS, MAYAGUEZ 747">
+    <title>Fundación Despertar - Bienvenidos</title>
   </head>
   <body>
     <header>
@@ -74,7 +72,7 @@
       <div class="row">
         <div class="container__nosotros__texto col-lg-5">
           <h2>NOSOTROS</h2>
-          <p>Centro Renacer brinda un servicio para responder a las necesidades más urgentes de las personas que padecen problemas de todo tipo.
+          <p>Fundación Despertar brinda un servicio para responder a las necesidades más urgentes de las personas que padecen problemas de todo tipo.
             Somos una comunidad de puertas abiertas, libre de drogas y alcohol. Ofrecemos tratamiento para pacientes de ambos sexos desde los 14 años en adelante.
             Para esto es fundamental el apoyo y acompañamiento de la familia, logrando así una mejor contención en el duro camino a la recuperación.
           </p>
@@ -144,7 +142,25 @@
           <p class="container__tratamientos__parrafo">Todos nuestros tratamientos son de asistencia voluntaria y, en caso de ser necesario, tras un exhaustivo diagnóstico diferencial, implementando tratamientos.<br>
             Contamos con un equipo terapéutico interdisciplinario altamente capacitado, conformado por psicólogos, psiquiatras, médicos, docentes, trabajadores sociales, operadores socio-terapéuticos, talleristas, entre otros.</p>
         </div>
-        
+
+        <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align">
+          Open Section 1</button>
+          
+          <div id="Demo1" class="w3-container w3-hide">
+            <p>Some text..</p>
+          </div>
+          
+          <script>
+          function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+              x.className += " w3-show";
+            } else {
+              x.className = x.className.replace(" w3-show", "");
+            }
+          }
+          </script>
+
         <div class="container__tratamientos__info">
           <div class="row">
             <div class="container col-lg-6 col-sm-8">
@@ -152,6 +168,7 @@
                 <button type="button" class="centered btn" data-bs-toggle="modal" data-bs-target="#social">
                   Terapia Social
                 </button>
+                
                 
                 <div class="modal fade" id="social" tabindex="-1" aria-labelledby="modalsocial" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered modal-lg show">
