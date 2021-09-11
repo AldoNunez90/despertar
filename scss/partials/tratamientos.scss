@@ -90,6 +90,21 @@ h3 {
   }
 
   /* opciones modal*/
+  
+  .propiedades {
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: .375rem .75rem;
+    background-color: transparent;
+    border-radius: .25rem;
+    border: 1px solid transparent;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    
+  }
+  .centered:focus-visible {
+    outline: none !important;
+  }
   .btn:focus{
     display: none;
   }
@@ -116,3 +131,5 @@ h3 {
 .btn-tratamientos {
   background-color: white;
 }
+
+  

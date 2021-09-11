@@ -100,6 +100,19 @@ h3 {
   font-size: 4vw; }
 
 /* opciones modal*/
+.propiedades {
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  padding: .375rem .75rem;
+  background-color: transparent;
+  border-radius: .25rem;
+  border: 1px solid transparent;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
+
+.centered:focus-visible {
+  outline: none !important; }
+
 .btn:focus {
   display: none; }
 
@@ -244,7 +257,9 @@ h4 {
   .container__fondo {
     margin-bottom: 8vh; }
   .container__nosotros {
-    margin-bottom: 8vh; } }
+    margin-bottom: 8vh; }
+  .acordeonMobile {
+    display: none; } }
 
 @media only screen and (max-width: 992px) {
   header {
@@ -307,4 +322,12 @@ h4 {
   .container__footer__texto {
     font-size: 3vw; }
   .container__footer__logo__cierre {
-    width: 120px; } }
+    width: 120px; }
+  b {
+    font-size: inherit; }
+  .btn-tratamientos {
+    font-size: small; }
+  .modal-content {
+    width: 90%; }
+  .modal-dialog {
+    justify-content: center; } }

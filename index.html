@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <link rel="icon" type="image/png" href="./media/iconopagina.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilo.css">
@@ -142,35 +143,18 @@
           <p class="container__tratamientos__parrafo">Todos nuestros tratamientos son de asistencia voluntaria y, en caso de ser necesario, tras un exhaustivo diagnóstico diferencial, implementando tratamientos.<br>
             Contamos con un equipo terapéutico interdisciplinario altamente capacitado, conformado por psicólogos, psiquiatras, médicos, docentes, trabajadores sociales, operadores socio-terapéuticos, talleristas, entre otros.</p>
         </div>
-
-        <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align">
-          Open Section 1</button>
-          
-          <div id="Demo1" class="w3-container w3-hide">
-            <p>Some text..</p>
-          </div>
-          
-          <script>
-          function myFunction(id) {
-            var x = document.getElementById(id);
-            if (x.className.indexOf("w3-show") == -1) {
-              x.className += " w3-show";
-            } else {
-              x.className = x.className.replace(" w3-show", "");
-            }
-          }
-          </script>
-
-        <div class="container__tratamientos__info">
-          <div class="row">
+        <!-----------efecto Modal-------------->
+<div class="efectoModal">
+  <div class="container__tratamientos__info">
+    <div class="row">
             <div class="container col-lg-6 col-sm-8">
               <div>
-                <button type="button" class="centered btn" data-bs-toggle="modal" data-bs-target="#social">
+                <button type="button" class="centered propiedades" data-bs-toggle="modal" data-bs-target="#social">
                   Terapia Social
                 </button>
                 
                 
-                <div class="modal fade" id="social" tabindex="-1" aria-labelledby="modalsocial" aria-hidden="true">
+                <div class="modal fade show" id="social" tabindex="-1" aria-labelledby="modalsocial" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered modal-lg show">
                     <div class="modal-content">
                       <div class="modal-body">
@@ -184,7 +168,7 @@
                          
                          La historia personal es el resultado de la suma de decisiones de la vida de una persona. Las decisiones, que representan las actitudes, ideas, creencias, valores y aptitudes personales, por un lado y las situaciones particulares vivenciadas, por el otro. Con estos elementos trabaja el terapeuta social en la <b>reconstrucción de un nuevo proyecto de vida</b>, aportando información y conocimiento que facilite el desarrollo de nuevas aptitudes y habilidades sociales. Se trata de una revisión de su historia que le permita al individuo extraer hechos y datos positivos y negativos. Fortaleciendo los primeros y modificando o cambiando los segundos.
                         </p>
-                        <button type="button" class="btn btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
+                        <button type="button" class="propiedades btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
                       </div>
                       
                     
@@ -197,7 +181,7 @@
             
             <div class="container col-lg-6 col-sm-8">
               <div>
-                <button type="button" class="centered btn" data-bs-toggle="modal" data-bs-target="#familiar">
+                <button type="button" class="centered propiedades" data-bs-toggle="modal" data-bs-target="#familiar">
                   Terapia Familiar
                 </button>
                 
@@ -218,7 +202,7 @@
                           
                           En el caso de los problemas de consumo, la familia puede asistir a terapia familiar mientras que la persona con problemas de consumo participa en un tratamiento residencial. A veces, la familia puede participar en terapia familiar, incluso cuando la persona con este problema no buscó un tratamiento propio.                          
                         </p>
-                        <button type="button" class="btn btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
+                        <button type="button" class="propiedades btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
                       </div>
                       
                     
@@ -235,7 +219,7 @@
         
             <div class="container col-lg-6 col-sm-8">
               <div>
-                <button type="button" class="centered btn" data-bs-toggle="modal" data-bs-target="#psiquiatra">
+                <button type="button" class="centered propiedades" data-bs-toggle="modal" data-bs-target="#psiquiatra">
                   Terapias Psiquiátricas
                 </button>
                 
@@ -249,7 +233,7 @@
 
                           En el caso de los principales trastornos de la salud mental, la mayoría de los estudios sugieren que un enfoque terapéutico que contemple la utilización conjunta de fármacos y psicoterapia resultará más eficaz que cualquiera de los métodos de tratamiento empleados por separado.                          
                         </p>
-                        <button type="button" class="btn btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
+                        <button type="button" class="propiedades btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
                       </div>
                       
                     
@@ -261,7 +245,7 @@
             </div>
             <div class="container col-lg-6 col-sm-8">
               <div>
-                <button type="button" class="centered btn" data-bs-toggle="modal" data-bs-target="#psicologica">
+                <button type="button" class="centered propiedades" data-bs-toggle="modal" data-bs-target="#psicologica">
                   Terapias Psicológicas
                 </button>
                 
@@ -277,7 +261,7 @@
                           
                           Esta tiene por finalidad el diagnóstico, tratamiento, resolución y prevención de problemas de salud mental, emocionales o de conducta. Por tanto, la aplicación de las diferentes técnicas de psicología clínica sobre un paciente es lo que denominamos psicoterapia.                          
                         </p>
-                        <button type="button" class="btn btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
+                        <button type="button" class="propiedades btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
                       </div>
                       
                     
@@ -305,7 +289,7 @@
             <div class="container col-lg-6 col-sm-8">
               <img src="./media/tratamiento5.jpg" alt="" class="container__tratamientos__info__foto">
               <div>
-                <button type="button" class="centered btn" data-bs-toggle="modal" data-bs-target="#psicoterapeuticas">
+                <button type="button" class="centered propiedades" data-bs-toggle="modal" data-bs-target="#psicoterapeuticas">
                   Terapias Psicoterapéuticas
                 </button>
                 
@@ -348,7 +332,7 @@
                           Es una sensación emocional displacentera que pone en estado de alerta al organismo, generando cambios en el estado corporal (sudoración, taquicardia, etc.).
                           La angustia es una sensación universalmente experimentada por el ser humano, pero puede ser adaptativa o no, dependiendo de la magnitud con que se presente. Cuando la angustia se sostiene en el tiempo, es de gran intensidad y refleja una respuesta no adaptativa respecto de la situación que se presenta, pueden aparecer crisis de angustia o ataques de pánico.<br>                          
                         </p>
-                        <button type="button" class="btn btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
+                        <button type="button" class="propiedades btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
                       </div>
                       
                       
@@ -361,8 +345,9 @@
               <a name="contacto"></a>
             </div>
           </div>
-        </div>
-        
+  </div>
+</div>        
+<!-----------efecto Modal-------------->
         
         
       </div>

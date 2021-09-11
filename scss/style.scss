@@ -18,8 +18,11 @@
     .container__nosotros {
         margin-bottom: 8vh;
     }
+    .acordeonMobile {
+        display: none;
+    }
 }
-    
+
 
 @media only screen and (max-width: 992px){
     header {
@@ -56,7 +59,6 @@
 
 
 @media only screen and (max-width: 600px){
-
     .navbar-toggler {
         display: none;
     }
@@ -113,7 +115,18 @@
     .container__footer__logo__cierre{
         width: 120px;
     }
-    
+    b {
+        font-size: inherit
+    };
+    .btn-tratamientos {
+        font-size: small;
+    }
+    .modal-content {
+        width: 90%;
+    }
+    .modal-dialog {
+        justify-content: center;
+    }
 }
 
 
