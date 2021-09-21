@@ -346,71 +346,54 @@
             </div>
           </div>
   </div>
-</div>        
-<!-----------efecto Modal-------------->
-        
-        
-      </div>
-    </div>
+</div>    
+   
   </div>
-  
-  <!-------------formulario de contacto----------->
+</div>    
+<!-----------efecto Modal-------------->
+       
   <div class="text-center container__contacto">
     <div class="row container__contacto__row">
-      <div class="col-lg-8 container__contacto__boxlogo">
-        <img src="./media/logo12.png" alt="logo principal" class="container__contacto__boxlogo__logo">
-      </div>
-      
-      <form action="send.php" method="POST" class="form col-lg-4">
-        <div >
-            <h4>CONTACTENOS</h4>
-          <div>
-            <label for="nombre" class="labelcontacto">Nombre</label>
-            <input type="text" name="nombre" class="form-control mb-3" id="nombre">
-          </div>
-          <div>
-            <label for="email" class="labelcontacto">E-mail</label>
-            <input type="email" name="email"  class="form-control mb-3">
-          </div>
-          <div>
-            <label for="mensaje" class="labelcontacto">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" name="mensaje" class="form-control mb-3" cols="30" rows="6"></textarea>
-          </div>
-          <div class="container__btn">
-            <button type="submit" class="form-control btnEnviar">ENVIAR</button>
-          </div>
+        <div class="col-lg-8 container__contacto__boxlogo">
+          <img src="./media/logo12.png" alt="logo principal" class="container__contacto__boxlogo__logo">
         </div>
+        
+        <form action="send.php" method="POST" class="form col-lg-4">
+            <h4>CONTACTENOS</h4>
+            <fieldset>
+              <label for="nombre" class="labelcontacto"  >Nombre</label>
+              <input type="text" name="nombre" required="required" class="form-control mb-3" id="nombre">
+            </fieldset>
+            <fieldset>
+              <label for="telefono" class="labelcontacto" >Teléfono</label>
+              <input type="tel" name="telefono" required="required" class="form-control mb-3" minlength="10" maxlength="13">
+            </fieldset>
+            <fieldset>
+              <label for="email" class="labelcontacto" >E-mail</label>
+              <input type="email" name="email" required="required" class="form-control mb-3">
+            </fieldset>
+            <fieldset>
+              <label for="mensaje" class="labelcontacto" >Mensaje</label>
+              <textarea name="mensaje" id="mensaje" required="required" class="form-control mb-3" cols="30" rows="6"></textarea>
+            </fieldset>
+            <fieldset class="container__btn">
+              <button type="submit" class="form-control btnEnviar"  data-submit="...Enviar">ENVIAR</button>
+            </fieldset>
         </form>
+      </div>
     </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  </div>
-  
-  
-  <!-----------------footer----------------->
-  <div class="container__footer">
-    <div class="container__footer__logo text-center">
-      <img src="./media/logo2.png" alt="logo cierre" class="container__footer__logo__cierre">
-<p class="container__footer__texto">
-Mayagüez 747, Tortuguitas, Buenos Aires
-Teléfono - 011-1522770776
-E-mail - Clinicadespertarg@gmail.com</p>
+          
+      <!-----------------footer----------------->
+      <div class="container__footer">
+        <div class="container__footer__logo text-center">
+          <img src="./media/logo2.png" alt="logo cierre" class="container__footer__logo__cierre">
+          <p class="container__footer__texto"> Mayagüez 747, Tortuguitas, Buenos Aires <br> Teléfono - 011-1522770776 <br> E-mail - Clinicadespertarg@gmail.com</p>
       </div>
     </div>
     
     
     
-    
-  </div>
-</div>
+ 
 
 
 

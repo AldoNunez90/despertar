@@ -47,6 +47,7 @@ h4 {
   width: 90%;
 }
 
-.formulario {
+label {
   text-align: left;
+  font-family: "Century Gothic" !important;
 }

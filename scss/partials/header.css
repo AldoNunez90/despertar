@@ -13,7 +13,7 @@
 }
 
 .container {
-  max-width: 80%;
+  max-width: 81%;
   padding: 0;
   margin-top: 2vh;
   margin-bottom: 2vh;
@@ -35,9 +35,10 @@
 
 .container__navbar {
   position: fixed;
-  width: 80%;
+  width: 81%;
   background-color: white;
   z-index: 1000;
+  border-radius: 5px;
 }
 
 .container__numeros {
