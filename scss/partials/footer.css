@@ -1,0 +1,18 @@
+.container__footer {
+  background-color: rgba(17, 4, 72, 0.75);
+  margin-top: 5vh;
+}
+
+.container__footer__logo {
+  padding: 2vh;
+}
+
+.container__footer__logo__cierre {
+  width: 100px;
+}
+
+.container__footer__texto {
+  color: white !important;
+  text-align: center;
+  -webkit-user-modify: read-write-plaintext-only;
+}

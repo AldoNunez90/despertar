@@ -97,8 +97,7 @@ h3 {
   z-index: 100;
   color: white !important;
   font-weight: bold;
-  font-size: 4vw;
-  background-color: transparent; }
+  font-size: 4vw; }
 
 /* opciones modal*/
 .propiedades {
@@ -248,9 +247,8 @@ h4 {
     .container__contacto__boxlogo__logo {
       width: 90%; }
 
-label {
-  text-align: left;
-  font-family: "Century Gothic" !important; }
+.formulario {
+  text-align: left; }
 
 @media only screen and (min-width: 1300px) {
   .bienvenidos {

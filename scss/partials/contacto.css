@@ -1,7 +1,53 @@
-.labelCorreo {
+h4 {
+  color: #100447 !important;
+  font-weight: bold;
+  font-size: 3vw;
+  text-align: left;
+}
+
+.labelcontacto {
   color: #100447 !important;
 }
 
-.logo__contacto {
-  width: 20vw;
+.container__btn {
+  text-align: -webkit-right;
+}
+
+.btnEnviar {
+  width: 40%;
+  color: #100447 !important;
+  font-weight: bold;
+  background-color: #397b92;
+  border: none;
+}
+
+.container__contacto {
+  background-color: rgba(57, 123, 147, 0.74);
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container__contacto__row {
+  max-height: 80%;
+  max-width: 80%;
+  margin: auto;
+  padding: 4vh 0;
+  text-align: start;
+}
+
+.container__contacto__boxlogo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container__contacto__boxlogo__logo {
+  width: 90%;
+}
+
+label {
+  text-align: left;
+  font-family: "Century Gothic" !important;
 }

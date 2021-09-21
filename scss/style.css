@@ -22,48 +22,33 @@ p {
   font-size: 1.5vw;
 }
 
+.container__footer {
+  background-color: rgba(17, 4, 72, 0.75);
+  margin-top: 5vh;
+}
+
+.container__footer__logo {
+  padding: 2vh;
+}
+
+.container__footer__logo__cierre {
+  width: 100px;
+}
+
+.container__footer__texto {
+  color: white !important;
+  text-align: center;
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
 .container__tratamientos {
   max-width: 80%;
-}
-
-h3 {
-  color: #397b92 !important;
-  font-weight: bold;
-  font-size: 4.5vw;
-  text-align: left;
-}
-
-label {
-  color: white !important;
-  font-weight: bold;
-  font-size: 2vw;
-  z-index: 150;
-  position: absolute;
-}
-
-.tratamiento__1, .tratamiento__2 {
-  -webkit-transform: translate(11vw, 36vh);
-          transform: translate(11vw, 36vh);
-}
-
-.tratamiento__3, .tratamiento__4 {
-  -webkit-transform: translate(8vw, 36vh);
-          transform: translate(8vw, 36vh);
-}
-
-.tratamiento__5 {
-  -webkit-transform: translate(7vw, 36vh);
-          transform: translate(7vw, 36vh);
 }
 
 .container__tratamientos__parrafo {
   color: #100447 !important;
   font-weight: normal;
   font-size: 2vw;
-}
-
-.row {
-  overflow: hidden;
 }
 
 .container__tratamientos__info__foto {
@@ -77,21 +62,128 @@ label {
 .container__tratamientos__info__parrafo {
   font-weight: normal;
   color: #100447 !important;
-  font-size: 1.95vw;
+  font-size: 2vw;
   width: 90%;
   padding-top: 2vw;
 }
 
-.capaOpacidad {
-  background-color: #100447;
-  opacity: 0.3;
+span {
+  font-size: 2vw;
+}
+
+h3 {
+  color: #397b92 !important;
+  font-weight: bold;
+  font-size: 4.5vw;
+  text-align: left;
+}
+
+.tratamiento {
+  color: white !important;
+  font-weight: bold;
+  font-size: 2vw;
+  z-index: 150;
   position: absolute;
-  z-index: 10;
-  height: 68vh;
-  width: 34.5vw;
-  -webkit-transform: translateX(2vw) translateY(5.3vh);
-          transform: translateX(2vw) translateY(5.3vh);
-  border-radius: 10px;
+}
+
+.row {
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 100;
+  color: white !important;
+  font-weight: bold;
+  font-size: 4vw;
+  background-color: transparent;
+}
+
+/* opciones modal*/
+.propiedades {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  padding: .375rem .75rem;
+  background-color: transparent;
+  border-radius: .25rem;
+  border: 1px solid transparent;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.centered:focus-visible {
+  outline: none !important;
+}
+
+.btn:focus {
+  display: none;
+}
+
+.centered:hover {
+  color: #397b92 !important;
+}
+
+h5 {
+  font-size: 4vw;
+  color: white !important;
+  text-transform: uppercase;
+}
+
+b {
+  color: white !important;
+}
+
+.modal-content {
+  background-color: #297b97;
+}
+
+.textoModal {
+  color: white !important;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  font-weight: normal;
+}
+
+.btn-tratamientos {
+  background-color: white;
 }
 
 * {
@@ -101,8 +193,15 @@ label {
   font-size: 20px;
 }
 
+.bienvenidos {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 20vh;
+}
+
 .container {
-  max-width: 80%;
+  max-width: 81%;
   padding: 0;
   margin-top: 2vh;
   margin-bottom: 2vh;
@@ -120,6 +219,14 @@ label {
   -ms-flex-item-align: self-end;
       -ms-grid-row-align: self-end;
       align-self: self-end;
+}
+
+.container__navbar {
+  position: fixed;
+  width: 81%;
+  background-color: white;
+  z-index: 1000;
+  border-radius: 5px;
 }
 
 .container__numeros {
@@ -159,6 +266,7 @@ label {
 .container__fondo {
   margin-bottom: 15vh;
   max-width: 80%;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -166,8 +274,7 @@ label {
 }
 
 .container__fondo__overlay {
-  background-color: whitesmoke;
-  opacity: 0.44;
+  background-color: rgba(255, 255, 255, 0.5);
   width: 100%;
   height: 564px;
   position: absolute;
@@ -178,6 +285,7 @@ label {
   z-index: -100;
   position: relative;
   max-height: 564px;
+  top: 10vh;
 }
 
 .container__fondo__img__arboles {
@@ -185,27 +293,191 @@ label {
 }
 
 .container__fondo__logo {
-  position: absolute;
   z-index: 100;
   width: 20vw;
-  top: 16%;
-  left: 38%;
 }
 
 .container__fondo h1 {
   font-weight: bold;
-  position: absolute;
   z-index: 100;
-  top: 80%;
-  left: 29.5%;
   color: #100447 !important;
   font-size: 5vw;
 }
 
-.labelCorreo {
+h4 {
+  color: #100447 !important;
+  font-weight: bold;
+  font-size: 3vw;
+  text-align: left;
+}
+
+.labelcontacto {
   color: #100447 !important;
 }
 
-.logo__contacto {
-  width: 20vw;
+.container__btn {
+  text-align: -webkit-right;
+}
+
+.btnEnviar {
+  width: 40%;
+  color: #100447 !important;
+  font-weight: bold;
+  background-color: #397b92;
+  border: none;
+}
+
+.container__contacto {
+  background-color: rgba(57, 123, 147, 0.74);
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container__contacto__row {
+  max-height: 80%;
+  max-width: 80%;
+  margin: auto;
+  padding: 4vh 0;
+  text-align: start;
+}
+
+.container__contacto__boxlogo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container__contacto__boxlogo__logo {
+  width: 90%;
+}
+
+label {
+  text-align: left;
+  font-family: "Century Gothic" !important;
+}
+
+@media only screen and (min-width: 1300px) {
+  .bienvenidos {
+    top: 13vh;
+  }
+  .container__nav {
+    margin-left: 12vw;
+  }
+  .container__fondo {
+    margin-bottom: 8vh;
+  }
+  .container__nosotros {
+    margin-bottom: 8vh;
+  }
+  .acordeonMobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  header {
+    text-align: center;
+  }
+  .container {
+    text-align: -webkit-center;
+  }
+  .navbar-toggler {
+    display: none;
+  }
+  .container__navbar {
+    position: relative;
+  }
+  .container__fondo {
+    margin: 0;
+  }
+  .container__fondo__img {
+    top: 0;
+    margin-bottom: 2vh;
+  }
+  p, .container__tratamientos__parrafo, .container__tratamientos__info__parrafo, span {
+    font-size: 2.5vw;
+  }
+  .bienvenidos {
+    top: 10vh;
+  }
+  .container__nosotros {
+    margin-bottom: 4vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-toggler {
+    display: none;
+  }
+  .container__numeros__whatsapp {
+    width: 25px;
+  }
+  .container__numeros__telefono {
+    width: 23px;
+  }
+  .container__navbar {
+    position: unset;
+    display: inline;
+  }
+  .navbar-light .navbar-toggler {
+    color: #297b97 !important;
+  }
+  .container__nav {
+    text-align: center;
+    margin: 0;
+  }
+  .container__nosotros {
+    margin-bottom: 4vh;
+  }
+  .container__fondo {
+    margin-bottom: 4vh;
+    max-width: 80%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    content-visibility: auto;
+    height: 180px;
+  }
+  .container__fondo__img {
+    top: 0;
+  }
+  .bienvenidos {
+    top: 7vh;
+  }
+  .container__fondo__overlay {
+    height: 176px;
+  }
+  p, .container__tratamientos__parrafo, .container__tratamientos__info__parrafo {
+    font-size: 2.5vw;
+  }
+  h4 {
+    font-size: 7vw;
+    text-align: center;
+  }
+  .container__contacto__boxlogo__logo {
+    margin-bottom: 1vh;
+  }
+  .container__footer__texto {
+    font-size: 3vw;
+  }
+  .container__footer__logo__cierre {
+    width: 120px;
+  }
+  b {
+    font-size: inherit;
+  }
+  .btn-tratamientos {
+    font-size: small;
+  }
+  .modal-content {
+    width: 90%;
+  }
+  .modal-dialog {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }

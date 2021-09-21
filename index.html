@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="icon" type="image/png" href="./media/iconopagina.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    
-
-
     <link rel="stylesheet" href="./css/estilo.css">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <title></title>
+    <meta name="description" content="Fundación despertar - Bienvenidos">
+    <meta name="keywords" content="FUNDACION, DESPERTAR, CLINICA, TERAPIA, ACOMPAÑAMIENTO, FAMILIAR, NOSOTROS, TRATAMIENTOS, TERAPIA SOCIAL, TERAPIA FAMILIAR, TERAPIA PSIQUIATRICA, TERAPIA PSICOLOGICA, TORTUGUITAS, MAYAGUEZ 747">
+    <title>Fundación Despertar - Bienvenidos</title>
   </head>
   <body>
     <header>
+      <a name="inicio"></a>
       <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light fondoAzul">
+    <nav class="navbar navbar-expand-lg navbar-light fondoAzul container__navbar">
       <div class="container-fluid">
         <!-- logo principal con link al inicio -->
         <div>
@@ -24,30 +24,30 @@
            <img src="./media/logo12.png" alt="clinica despertar" class="container__logo">
           </a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler nav__colapsado" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="container__nav collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="./html/nosotros.html">Inicio</a>
+              <a class="nav-link" href="#inicio">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./html/tratamiento.html">Nosotros</a>
+              <a class="nav-link" href="#nosotros">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./html/imagenes y videos.html">Tratamiento</a>
+              <a class="nav-link" href="#tratamientos">Tratamientos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./html/contacto.html">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
           <div class="container__numeros">
-            <a href="https://api.whatsapp.com/send?phone=3413505026" target="blank">
+            <a href="https://api.whatsapp.com/send?phone=+5491122770776" target="blank">
               <img src="./media/IcoWhat2.png" alt="clinica despertar" class="container__numeros__whatsapp"></a>
-              <a href="tel:3143505025" target="blank">
+              <a href="tel:+5491122770776" target="blank">
                 <img src="./media/Icotelefono2.png" alt="telefono" class="container__numeros__telefono"></a>
           </div>
       </div>
@@ -61,8 +61,11 @@
       <div class="container__fondo">
         <div class="container__fondo__overlay"></div>
         <div class="container__fondo__img"><img src="./media/imagenInicio.jpg" alt="fondo bosque" class="container__fondo__img__arboles"></div>
+        <div class="bienvenidos">
         <img src="./media/logo2.png" class="container__fondo__logo" alt="Logo princial">
-        <h1>BIENVENIDOS</h1>
+          <h1>BIENVENIDOS</h1>
+        <a name="nosotros"></a>
+      </div>
       </div>
 
       <!--------------        nosotros    ------------------->
@@ -70,13 +73,13 @@
       <div class="row">
         <div class="container__nosotros__texto col-lg-5">
           <h2>NOSOTROS</h2>
-          <p>Centro Renacer brinda un servicio para responder a las necesidades más urgentes de las personas que padecen problemas de todo tipo.
-            Nuestro programa es a base de estrategias que incluye la casa de convivencia, logrando al mismo tiempo en que se recupera el paciente, el reacomodo de la familia.
+          <p>Fundación Despertar brinda un servicio para responder a las necesidades más urgentes de las personas que padecen problemas de todo tipo.
+            Somos una comunidad de puertas abiertas, libre de drogas y alcohol. Ofrecemos tratamiento para pacientes de ambos sexos desde los 14 años en adelante.
             Para esto es fundamental el apoyo y acompañamiento de la familia, logrando así una mejor contención en el duro camino a la recuperación.
           </p>
         </div>
         <div class="container__nosotros__slide col-lg-7">
-          <div id="carousel-principal" class="carousel slide" data-bs-ride="carousel">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./media/nosotros1.jpg" class="d-block w-100" alt="reunion">
@@ -128,6 +131,7 @@
             </button>
           </div>
           
+          <a name="tratamientos"></a>
         </div>
       </div>
     </div>
@@ -136,18 +140,76 @@
       <div class="container__tratamientos">
         <div>
           <h3>TRATAMIENTOS</h3>
-          <p class="container__tratamientos__parrafo">Es sabido que cuando nos enfrentamos con un paciente afectado por la enfermedad, en general su red familiar, su pareja o sus vínculos más cercanos también lo están. Es por esto de suma importancia para el paciente, contar con un entorno comprometido que lo acompañe durante su rehabilitación y reconozca su coparticipación en el problema</p>
+          <p class="container__tratamientos__parrafo">Todos nuestros tratamientos son de asistencia voluntaria y, en caso de ser necesario, tras un exhaustivo diagnóstico diferencial, implementando tratamientos.<br>
+            Contamos con un equipo terapéutico interdisciplinario altamente capacitado, conformado por psicólogos, psiquiatras, médicos, docentes, trabajadores sociales, operadores socio-terapéuticos, talleristas, entre otros.</p>
         </div>
-        
-        <div class="container__tratamientos__info">
-          <div class="row">
-            <div class="col-lg-6 col-sm-4">
-              <label class="tratamiento tratamiento__1" for="terapia social">Terapia Social</label>
+        <!-----------efecto Modal-------------->
+<div class="efectoModal">
+  <div class="container__tratamientos__info">
+    <div class="row">
+            <div class="container col-lg-6 col-sm-8">
+              <div>
+                <button type="button" class="centered propiedades" data-bs-toggle="modal" data-bs-target="#social">
+                  Terapia Social
+                </button>
+                
+                
+                <div class="modal fade show" id="social" tabindex="-1" aria-labelledby="modalsocial" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg show">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <h5 class="modal-title" id="modalsocial">Terapia Social</h5>
+                         <p class="textoModal">
+                         Esencialmente, la <b>socioterapia</b> es una nueva alternativa de intervención profesional y una nueva terapia alternativa de atención, para personas y grupos con problemas interpersonales e intragrupales de índole social, es decir, de convivencia. <br><br>
+                         
+                         Consiste en una <b>estrategia socio-pedagógica</b> para el cambio como arte de coordinar las acciones y de obrar para alcanzar un objetivo de carácter promocional, preventivo y asistencial. Mediante esta estrategia logramos en el destinatario concretar cambios cognoscitivos puntuales y brindarle una adecuada capacitación social que le posibilite una saludable evolución personal y social. <br><br>
+                         
+                         En <b>socioterapia</b> se desarrolla el área consciente. Es por ello que empleamos estrategias <b>socio-pedagógicas</b>. Es decir, capacitamos al paciente para superar la situación <b>socio-problemática</b> que lo tiene imposibilitado para evolucionar en sus relaciones interpersonales. El paciente aprende con esas estrategias a convivir de modo saludable en sociedad y a desarrollar y emplear sus propios recursos para edificar una vida con bienestar en los aspectos familiares y sociales, o sea, con-vivenciales. <br><br>
+                         
+                         La historia personal es el resultado de la suma de decisiones de la vida de una persona. Las decisiones, que representan las actitudes, ideas, creencias, valores y aptitudes personales, por un lado y las situaciones particulares vivenciadas, por el otro. Con estos elementos trabaja el terapeuta social en la <b>reconstrucción de un nuevo proyecto de vida</b>, aportando información y conocimiento que facilite el desarrollo de nuevas aptitudes y habilidades sociales. Se trata de una revisión de su historia que le permita al individuo extraer hechos y datos positivos y negativos. Fortaleciendo los primeros y modificando o cambiando los segundos.
+                        </p>
+                        <button type="button" class="propiedades btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
+                      </div>
+                      
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
               <img src="./media/tratamiento1.jpg" alt="terapia social" class="container__tratamientos__info__foto">
             </div>
             
-            <div class="col-lg-6 col-sm-4">
-              <label class="tratamiento tratamiento__2" for="terapia familiar">Terapia Familiar</label>
+            <div class="container col-lg-6 col-sm-8">
+              <div>
+                <button type="button" class="centered propiedades" data-bs-toggle="modal" data-bs-target="#familiar">
+                  Terapia Familiar
+                </button>
+                
+                <div class="modal fade" id="familiar" tabindex="-1" aria-labelledby="modalfamiliar" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <h5 class="modal-title" id="modalfamiliar">Terapia Familiar</h5>
+                         <p class="textoModal">
+                          La <b>terapia familiar</b> aborda los problemas generados en el contexto de las relaciones familiares o con personas significativas en la vida de las personas. Se trata de un reconocido enfoque psicoterapéutico dirigido principalmente al sistema familiar como unidad social. <br><br>
+
+                          Los principales objetivos de la terapia familiar son: <br><br>
+                          • La mejora del funcionamiento de la familia a diferentes niveles. <br>
+                          • El aumento de la comprensión mutua y el apoyo emocional entre los miembros de la misma. <br>
+                          • El desarrollo de estrategias de afrontamiento y habilidades de resolución de problemas ante diferentes dilemas y situaciones de la vida. <br><br>
+                          
+                          La terapia familiar y la práctica sistémica está especialmente indicada cuando el objetivo es mejorar la capacidad de los miembros de la familia para apoyarse mutuamente. Posibilitar que los miembros de la familia puedan usar más eficientemente sus recursos de apoyo puede ser vital para ayudarles a gestionar las fases de transición del desarrollo familiar o los acontecimientos vitales estresantes tales como una enfermedad grave. <br><br>
+                          
+                          En el caso de los problemas de consumo, la familia puede asistir a terapia familiar mientras que la persona con problemas de consumo participa en un tratamiento residencial. A veces, la familia puede participar en terapia familiar, incluso cuando la persona con este problema no buscó un tratamiento propio.                          
+                        </p>
+                        <button type="button" class="propiedades btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
+                      </div>
+                      
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
               <img src="./media/tratamiento2.jpg" alt="terapia familiar" class="container__tratamientos__info__foto">
             </div>
         
@@ -155,93 +217,183 @@
           
             <div class="w-100 d-none d-md-block"></div>
         
-            <div class="col-lg-6 col-sm-4">
-              <label class="tratamiento tratamiento__3" for="terapias psiquiatricas">Terapias Psiquiatricas</label>
+            <div class="container col-lg-6 col-sm-8">
+              <div>
+                <button type="button" class="centered propiedades" data-bs-toggle="modal" data-bs-target="#psiquiatra">
+                  Terapias Psiquiátricas
+                </button>
+                
+                <div class="modal fade" id="psiquiatra" tabindex="-1" aria-labelledby="modalpsiquiatra" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <h5 class="modal-title" id="modalpsiquiatra">Terapias Psiquiátricas</h5>
+                         <p class="textoModal">
+                          El <b>Psiquiatra</b> es un <b>especialista</b> en el campo de la salud mental y está capacitado no sólo a dar terapia y tratamiento, sino para guiarte hacia costumbres saludables. Tiene como elementos fundamentales: la prevención, el diagnóstico y el tratamiento de dichos trastornos. <br><br>
+
+                          En el caso de los principales trastornos de la salud mental, la mayoría de los estudios sugieren que un enfoque terapéutico que contemple la utilización conjunta de fármacos y psicoterapia resultará más eficaz que cualquiera de los métodos de tratamiento empleados por separado.                          
+                        </p>
+                        <button type="button" class="propiedades btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
+                      </div>
+                      
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
               <img src="./media/tratamiento3.jpg" alt="terapias psiquiatricas" class="container__tratamientos__info__foto">
             </div>
-            <div class="col-lg-6 col-sm-4">
-              <label class="tratamiento tratamiento__4" for="terapias psicológicas">Terapias Psicológicas</label>
+            <div class="container col-lg-6 col-sm-8">
+              <div>
+                <button type="button" class="centered propiedades" data-bs-toggle="modal" data-bs-target="#psicologica">
+                  Terapias Psicológicas
+                </button>
+                
+                <div class="modal fade" id="psicologica" tabindex="-1" aria-labelledby="modalpsicologica" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <h5 class="modal-title" id="modalpsicologica">TERAPIAS PSICOLÓGICAS</h5>
+                         <p class="textoModal">
+                          A través de la <b>terapia psicológica</b> los terapeutas podemos acercarnos a evaluar y comprender cuando estamos frente a un paciente cuál es su <b>Cognición</b> (Pensamiento/Idea/Imagen/Creencia/Atribución) y como todas ellas se combinan a través de un conjunto organizado de pensamiento que llamamos creencias, que están conectadas a emociones y eventos en la vidas personal. <br><br>
+
+                          Asimismo,  el paciente es orientado para aprender a identificar cómo piensa, siente y actúa, lo cual impulsa a cambios en ciertos patrones de pensamientos que atrapan a los individuos en conflictos emocionales que afectan su calidad de vida. <br><br>
+                          
+                          Esta tiene por finalidad el diagnóstico, tratamiento, resolución y prevención de problemas de salud mental, emocionales o de conducta. Por tanto, la aplicación de las diferentes técnicas de psicología clínica sobre un paciente es lo que denominamos psicoterapia.                          
+                        </p>
+                        <button type="button" class="propiedades btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
+                      </div>
+                      
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
               <img src="./media/tratamiento4.jpg" alt="" class="container__tratamientos__info__foto">
             </div>
 
             <div class="w-100 d-none d-md-block"></div>
 
-            <div class="col-lg-6 col-sm-4">
-            <p class="container__tratamientos__info__parrafo">En nuestra comunidad colaboramos
+            <div class="container col-lg-6 col-sm-8">
+            <p class="container__tratamientos__info__parrafo">
+              En nuestra comunidad colaboramos
               con la recuperación de los familiares,
-              tanto como la de los pacientes.
+              tanto como la de los pacientes. <br>
               Tenemos la convicción de que
               los cambios en la actitud de la familia
               favorecerán el progreso de los
-              mismos y esto sumando las herra
-              mientas aportadas por Centro Renacer
+              mismos y esto sumando las herramientas aportadas por <span>Clínica Despertar</span>
               nos conducirán más rápidamente
               a la recuperación de la enfermedad.</p>
             </div>
-            <div class="container col-lg-6 col-sm-5">
+            <div class="container col-lg-6 col-sm-8">
               <img src="./media/tratamiento5.jpg" alt="" class="container__tratamientos__info__foto">
-              <div class="centered">Terapia psicoterapeutica
-              </div>
-            </div>
-
-          </div>
-        </div>
-        </div>
-
-        <!-------------formulario de contacto----------->
-        
-        <div class="text-center container__contacto">
-          <div class="row container__contacto__row">
-            <div class="col-lg-8 container__contacto__boxlogo">
-              <img src="./media/logo12.png" alt="logo principal" class="container__contacto__boxlogo__logo">
-            </div>
-            
-            <div class="col-lg-4">
-              <h4>CONTACTENOS</h4>
-              <form action="mailto:aldo.andres.nunez@gmail.com" method="GET" class="formulario">
+              <div>
+                <button type="button" class="centered propiedades" data-bs-toggle="modal" data-bs-target="#psicoterapeuticas">
+                  Terapias Psicoterapéuticas
+                </button>
                 
-                <label for="nombre" class="labelcontacto">Nombre</label>
-                <input type="text" class="form-control mb-3" id="nombre">
-
-                <label for="email" class="labelcontacto">E-mail</label>
-                <input type="email" class="form-control mb-3">
-
-                <label for="mensaje" class="labelcontacto">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" class="form-control mb-3" cols="30" rows="6"></textarea>
-                <div class="container__btn">
-                  <button type="submit" class="form-control btnEnviar">ENVIAR</button>
+                <div class="modal fade" id="psicoterapeuticas" tabindex="-1" aria-labelledby="modalpsicoterapeuticas" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <h5 class="modal-title" id="modalpsicoterapeuticas">Terapias psicoterapéuticas</h5>
+                         <p class="textoModal">
+                          La <b> psicoterapia </b> es una herramienta efectiva para el tratamiento de problemas emocionales o psicológicos que afectan tu calidad de vida, ayudándote a descubrir tus potencialidades e identificar posibles caminos a seguir con nuevas herramientas y habilidades.<br>
+                          <br>
+                          <b>
+                            Terapia Individual<br>
+                          </b>
+                          Se sugiere un encuentro con un psicoterapeuta, generalmente una vez por semana, dependiendo del estado del paciente.
+                          El tratamiento está orientado a tratar problemas psicológicos para mejorar la calidad de vida y las relaciones interpersonales.
+                          Los trastornos más frecuentes son:<br><br>
+                          <b>
+                            Ansiedad<br>
+                          </b>
+                          La ansiedad es un estado emocional normal de los seres humanos relacionada con la adaptación a nuestro contexto.
+                          Si este estado comienza a perturbar tu calidad de vida, perdura en el tiempo y te afecta de manera leve o aguda es conveniente que hagas una consulta con un psicólogo.<br><br>
+                          <b>
+                            Depresión<br>
+                          </b>
+                          La depresión es un trastorno psicológico que genera mucho sufrimiento y afecta las actividades de la vida cotidiana, las relaciones interpersonales y la relación con uno mismo.<br><br>
+                          <b>
+                            Trauma<br>
+                          </b>
+                          Se suele entender como trauma psíquico a toda experiencia que te produce malestar emocional y puede dejar secuelas.<br><br>
+                          <b>
+                            Estrés<br>
+                          </b>
+                          Es el conjunto de respuestas fisiológicas que preparan al organismo para la acción frente a un agente estresor.
+                          Cuando el estrés forma parte de tu vida diaria y te acostumbrás a él, influye en tu salud y en tu vida en general.
+                          Una situación aguda de estrés puede manifestarse tanto a nivel físico, emocional o en la conducta.<br><br>
+                          <b>
+                            Angustia<br>
+                          </b>
+                          Es una sensación emocional displacentera que pone en estado de alerta al organismo, generando cambios en el estado corporal (sudoración, taquicardia, etc.).
+                          La angustia es una sensación universalmente experimentada por el ser humano, pero puede ser adaptativa o no, dependiendo de la magnitud con que se presente. Cuando la angustia se sostiene en el tiempo, es de gran intensidad y refleja una respuesta no adaptativa respecto de la situación que se presenta, pueden aparecer crisis de angustia o ataques de pánico.<br>                          
+                        </p>
+                        <button type="button" class="propiedades btn-tratamientos" data-bs-dismiss="modal">ATRAS </button> 
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
                 </div>
-              </form>
-            </div>
-            </div>
-            
-            
-
-
-        
+              </div>
               
-
-
-
-
+              
+              <a name="contacto"></a>
+            </div>
+          </div>
+  </div>
+</div>    
+   
+  </div>
+</div>    
+<!-----------efecto Modal-------------->
+       
+  <div class="text-center container__contacto">
+    <div class="row container__contacto__row">
+        <div class="col-lg-8 container__contacto__boxlogo">
+          <img src="./media/logo12.png" alt="logo principal" class="container__contacto__boxlogo__logo">
+        </div>
+        
+        <form action="send.php" method="POST" class="form col-lg-4">
+            <h4>CONTACTENOS</h4>
+            <fieldset>
+              <label for="nombre" class="labelcontacto"  >Nombre</label>
+              <input type="text" name="nombre" required="required" class="form-control mb-3" id="nombre">
+            </fieldset>
+            <fieldset>
+              <label for="telefono" class="labelcontacto" >Teléfono</label>
+              <input type="tel" name="telefono" required="required" class="form-control mb-3" minlength="10" maxlength="13">
+            </fieldset>
+            <fieldset>
+              <label for="email" class="labelcontacto" >E-mail</label>
+              <input type="email" name="email" required="required" class="form-control mb-3">
+            </fieldset>
+            <fieldset>
+              <label for="mensaje" class="labelcontacto" >Mensaje</label>
+              <textarea name="mensaje" id="mensaje" required="required" class="form-control mb-3" cols="30" rows="6"></textarea>
+            </fieldset>
+            <fieldset class="container__btn">
+              <button type="submit" class="form-control btnEnviar"  data-submit="...Enviar">ENVIAR</button>
+            </fieldset>
+        </form>
       </div>
-
-
+    </div>
+          
       <!-----------------footer----------------->
       <div class="container__footer">
-        <div class="container__footer__logo">
+        <div class="container__footer__logo text-center">
           <img src="./media/logo2.png" alt="logo cierre" class="container__footer__logo__cierre">
-          <p class="container__footer__texto">Mayagüez 747, Tortuguitas, Buenos Aires
-Teléfono - 011-1522770776
-E-mail - Clinicadespertarg@gmail.com</p>
-        </div>
+          <p class="container__footer__texto"> Mayagüez 747, Tortuguitas, Buenos Aires <br> Teléfono - 011-1522770776 <br> E-mail - Clinicadespertarg@gmail.com</p>
       </div>
-
-
+    </div>
     
-      
-    </div>
-    </div>
+    
+    
+ 
 
 
 
