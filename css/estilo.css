@@ -24,8 +24,7 @@ p {
     width: 100px; }
   .container__footer__texto {
     color: white !important;
-    text-align: center;
-    -webkit-user-modify: read-write-plaintext-only; }
+    text-align: center; }
 
 .container__tratamientos {
   max-width: 80%; }
