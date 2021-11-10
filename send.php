@@ -49,7 +49,7 @@ $mail->AltBody = "{$mensaje} \n\n Enviado desde la web"; // Texto sin formato HT
 
 $estadoEnvio = $mail->Send(); 
 if($estadoEnvio){
-    echo "El correo fue enviado correctamente.";
+    echo "<script>alert('El mensaje fue enviado correctamente');location.href ='./index.html';</script>";
 } else {
     echo "Ocurrió un error inesperado.";
 }

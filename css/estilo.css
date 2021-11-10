@@ -15,16 +15,26 @@ p {
   text-align: left;
   font-size: 1.5vw; }
 
+.w-sep {
+  width: 56.5%;
+  margin: auto; }
+
 .container__footer {
   background-color: rgba(17, 4, 72, 0.75);
   margin-top: 5vh; }
   .container__footer__logo {
-    padding: 2vh; }
+    padding: 2vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center; }
   .container__footer__logo__cierre {
     width: 100px; }
   .container__footer__texto {
     color: white !important;
     text-align: center; }
+  .container__footer #mapa {
+    border-radius: 10px; }
 
 .container__tratamientos {
   max-width: 80%; }
@@ -97,7 +107,8 @@ h3 {
   color: white !important;
   font-weight: bold;
   font-size: 4vw;
-  background-color: transparent; }
+  background-color: transparent;
+  display: grid; }
 
 /* opciones modal*/
 .propiedades {
@@ -138,6 +149,9 @@ b {
 .btn-tratamientos {
   background-color: white; }
 
+.masInfo {
+  color: white !important; }
+
 * {
   font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
   font-weight: bold;
@@ -148,7 +162,7 @@ b {
   width: 100%;
   position: absolute;
   z-index: 10;
-  top: 20vh; }
+  top: 30vh; }
 
 .container {
   max-width: 81%;
@@ -159,8 +173,7 @@ b {
     width: 200px; }
   .container__nav {
     justify-content: space-between;
-    margin-left: 8vw;
-    align-self: self-end; }
+    margin-left: 8vw; }
   .container__navbar {
     position: fixed;
     width: 81%;
@@ -194,7 +207,7 @@ b {
   .container__fondo__overlay {
     background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
-    height: 564px;
+    height: 100%;
     position: absolute;
     z-index: 10; }
   .container__fondo__img {
@@ -279,10 +292,10 @@ label {
       margin-bottom: 2vh; }
   p, .container__tratamientos__parrafo, .container__tratamientos__info__parrafo, span {
     font-size: 2.5vw; }
-  .bienvenidos {
-    top: 10vh; }
   .container__nosotros {
-    margin-bottom: 4vh; } }
+    margin-bottom: 4vh; }
+  .container__footer__logo {
+    display: block; } }
 
 @media only screen and (max-width: 600px) {
   .navbar-toggler {
@@ -313,7 +326,7 @@ label {
   .bienvenidos {
     top: 7vh; }
   .container__fondo__overlay {
-    height: 176px; }
+    height: 100%; }
   p, .container__tratamientos__parrafo, .container__tratamientos__info__parrafo {
     font-size: 2.5vw; }
   h4 {
@@ -321,10 +334,15 @@ label {
     text-align: center; }
   .container__contacto__boxlogo__logo {
     margin-bottom: 1vh; }
+  .container__footer {
+    display: flex;
+    justify-content: center; }
   .container__footer__texto {
     font-size: 3vw; }
-  .container__footer__logo__cierre {
-    width: 120px; }
+  .container__footer__logo {
+    width: 90%; }
+    .container__footer__logo__cierre {
+      width: 120px; }
   b {
     font-size: inherit; }
   .btn-tratamientos {
@@ -332,4 +350,7 @@ label {
   .modal-content {
     width: 90%; }
   .modal-dialog {
-    justify-content: center; } }
+    justify-content: center; }
+  #mapa {
+    width: 300px;
+    height: 225px; } }

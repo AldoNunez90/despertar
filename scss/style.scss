@@ -47,11 +47,12 @@
     p, .container__tratamientos__parrafo, .container__tratamientos__info__parrafo, span {
         font-size: 2.5vw;
     }    
-        .bienvenidos {
-            top: 10vh;
-        }
+        
     .container__nosotros {
         margin-bottom: 4vh;
+    }
+    .container__footer__logo{
+        display: block;
     }
     }
     
@@ -97,7 +98,7 @@
         top: 7vh;
     }
     .container__fondo__overlay {
-        height: 176px;
+        height: 100%;
     }
     p, .container__tratamientos__parrafo, .container__tratamientos__info__parrafo {
         font-size: 2.5vw;
@@ -109,11 +110,19 @@
     .container__contacto__boxlogo__logo {
         margin-bottom: 1vh;
     }
+    .container__footer{
+        display: flex;
+        justify-content: center;
+    }
     .container__footer__texto{
         font-size: 3vw;
     }
-    .container__footer__logo__cierre{
-        width: 120px;
+    .container__footer__logo{
+        width: 90%;
+
+        &__cierre{
+            width: 120px;
+        }
     }
     b {
         font-size: inherit
@@ -126,6 +135,10 @@
     }
     .modal-dialog {
         justify-content: center;
+    }
+    #mapa {
+        width: 300px;
+    height: 225px;
     }
 }
 
