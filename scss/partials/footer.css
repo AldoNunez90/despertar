@@ -5,6 +5,19 @@
 
 .container__footer__logo {
   padding: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container__footer__logo__cierre {
@@ -14,4 +27,8 @@
 .container__footer__texto {
   color: white !important;
   text-align: center;
+}
+
+.container__footer #mapa {
+  border-radius: 10px;
 }

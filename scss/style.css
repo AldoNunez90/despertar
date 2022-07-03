@@ -22,6 +22,11 @@ p {
   font-size: 1.5vw;
 }
 
+.w-sep {
+  width: 56.5%;
+  margin: auto;
+}
+
 .container__footer {
   background-color: rgba(17, 4, 72, 0.75);
   margin-top: 5vh;
@@ -29,6 +34,19 @@ p {
 
 .container__footer__logo {
   padding: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container__footer__logo__cierre {
@@ -38,6 +56,10 @@ p {
 .container__footer__texto {
   color: white !important;
   text-align: center;
+}
+
+.container__footer #mapa {
+  border-radius: 10px;
 }
 
 .container__tratamientos {
@@ -129,6 +151,8 @@ h3 {
   font-weight: bold;
   font-size: 4vw;
   background-color: transparent;
+  display: -ms-grid;
+  display: grid;
 }
 
 /* opciones modal*/
@@ -185,6 +209,19 @@ b {
   background-color: white;
 }
 
+.masInfo {
+  color: white !important;
+}
+
+.verMas {
+  text-decoration: underline;
+}
+
+.descTerapia {
+  max-width: 90%;
+  cursor: pointer;
+}
+
 * {
   font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
   font-weight: bold;
@@ -196,7 +233,7 @@ b {
   width: 100%;
   position: absolute;
   z-index: 10;
-  top: 20vh;
+  top: 30vh;
 }
 
 .container {
@@ -215,9 +252,6 @@ b {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-left: 8vw;
-  -ms-flex-item-align: self-end;
-      -ms-grid-row-align: self-end;
-      align-self: self-end;
 }
 
 .container__navbar {
@@ -275,7 +309,7 @@ b {
 .container__fondo__overlay {
   background-color: rgba(255, 255, 255, 0.5);
   width: 100%;
-  height: 564px;
+  height: 100%;
   position: absolute;
   z-index: 10;
 }
@@ -357,6 +391,62 @@ label {
   font-family: "Century Gothic" !important;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .btn-wsp {
+    width: 63px;
+    height: 63px;
+    line-height: 66px;
+  }
+}
+
+.acaVaTodo {
+  margin-top: 20vh;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tratamientosDosImg {
+  width: 15vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.tratamientosDosMain, .encabezadoSeccion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.encabezadoSeccion, .tituloDeSeccion {
+  padding: 30px;
+}
+
+.tituloDeSeccion {
+  color: #397b92;
+  font-size: 15vh;
+}
+
+.terapias {
+  padding: 30px;
+}
+
 @media only screen and (min-width: 1300px) {
   .bienvenidos {
     top: 13vh;
@@ -371,6 +461,15 @@ label {
     margin-bottom: 8vh;
   }
   .acordeonMobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .adicionales {
+    display: none;
+  }
+  .mobileWp {
     display: none;
   }
 }
@@ -398,11 +497,17 @@ label {
   p, .container__tratamientos__parrafo, .container__tratamientos__info__parrafo, span {
     font-size: 2.5vw;
   }
-  .bienvenidos {
-    top: 10vh;
-  }
   .container__nosotros {
     margin-bottom: 4vh;
+  }
+  .container__footer__logo {
+    display: block;
+  }
+  .adicionales {
+    display: none;
+  }
+  .btn-wsp {
+    display: none;
   }
 }
 
@@ -447,7 +552,7 @@ label {
     top: 7vh;
   }
   .container__fondo__overlay {
-    height: 176px;
+    height: 100%;
   }
   p, .container__tratamientos__parrafo, .container__tratamientos__info__parrafo {
     font-size: 2.5vw;
@@ -459,8 +564,19 @@ label {
   .container__contacto__boxlogo__logo {
     margin-bottom: 1vh;
   }
+  .container__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .container__footer__texto {
     font-size: 3vw;
+  }
+  .container__footer__logo {
+    width: 90%;
   }
   .container__footer__logo__cierre {
     width: 120px;
@@ -475,6 +591,23 @@ label {
     width: 90%;
   }
   .modal-dialog {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #mapa {
+    width: 300px;
+    height: 225px;
+  }
+  .adicionales {
+    display: unset;
+    max-width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+  .row {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

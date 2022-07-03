@@ -51,3 +51,11 @@ label {
   text-align: left;
   font-family: "Century Gothic" !important;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .btn-wsp {
+    width: 63px;
+    height: 63px;
+    line-height: 66px;
+  }
+}

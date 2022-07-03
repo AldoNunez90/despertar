@@ -1,0 +1,30 @@
+.acaVaTodo {
+    margin-top: 20vh;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.tratamientosDosImg {
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.tratamientosDosMain, .encabezadoSeccion {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.encabezadoSeccion, .tituloDeSeccion {
+    padding: 30px;
+}
+
+.tituloDeSeccion{
+    color: #397b92;
+    font-size: 15vh;   
+}
+
+.terapias {
+    padding: 30px;
+}

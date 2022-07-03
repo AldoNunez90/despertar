@@ -152,6 +152,13 @@ b {
 .masInfo {
   color: white !important; }
 
+.verMas {
+  text-decoration: underline; }
+
+.descTerapia {
+  max-width: 90%;
+  cursor: pointer; }
+
 * {
   font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
   font-weight: bold;
@@ -264,6 +271,39 @@ label {
   text-align: left;
   font-family: "Century Gothic" !important; }
 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .btn-wsp {
+    width: 63px;
+    height: 63px;
+    line-height: 66px; } }
+
+.acaVaTodo {
+  margin-top: 20vh;
+  width: 95%;
+  display: flex;
+  flex-direction: column; }
+
+.tratamientosDosImg {
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+
+.tratamientosDosMain, .encabezadoSeccion {
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+
+.encabezadoSeccion, .tituloDeSeccion {
+  padding: 30px; }
+
+.tituloDeSeccion {
+  color: #397b92;
+  font-size: 15vh; }
+
+.terapias {
+  padding: 30px; }
+
 @media only screen and (min-width: 1300px) {
   .bienvenidos {
     top: 13vh; }
@@ -274,6 +314,12 @@ label {
   .container__nosotros {
     margin-bottom: 8vh; }
   .acordeonMobile {
+    display: none; } }
+
+@media only screen and (min-width: 1000px) {
+  .adicionales {
+    display: none; }
+  .mobileWp {
     display: none; } }
 
 @media only screen and (max-width: 992px) {
@@ -295,7 +341,11 @@ label {
   .container__nosotros {
     margin-bottom: 4vh; }
   .container__footer__logo {
-    display: block; } }
+    display: block; }
+  .adicionales {
+    display: none; }
+  .btn-wsp {
+    display: none; } }
 
 @media only screen and (max-width: 600px) {
   .navbar-toggler {
@@ -353,4 +403,11 @@ label {
     justify-content: center; }
   #mapa {
     width: 300px;
-    height: 225px; } }
+    height: 225px; }
+  .adicionales {
+    display: unset;
+    max-width: 80%;
+    display: flex;
+    text-align: center; }
+  .row {
+    justify-content: center; } }

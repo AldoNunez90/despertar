@@ -21,3 +21,8 @@ p {
   text-align: left;
   font-size: 1.5vw;
 }
+
+.w-sep {
+  width: 56.5%;
+  margin: auto;
+}
