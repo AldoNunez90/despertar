@@ -6,6 +6,28 @@
 require("./php/class.phpmailer.php");
 require("./php/class.smtp.php");
 
+// Valores del Captcha
+// if ($_POST['g-recaptcha-response'] == '') {
+//     echo "Captcha invalido";
+//     } else {"<script>alert(valido)</script>"}
+//     $obj = new stdClass();
+//     $obj->secret = "6LeI-hEjAAAAANOZKYTN1UqDp_uiTKcsdcvyer76";
+//     $obj->response = $_POST['g-recaptcha-response'];
+//     $obj->remoteip = $_SERVER['REMOTE_ADDR'];
+//     $url = 'https://www.google.com/recaptcha/api/siteverify';
+    
+//     $options = array(
+//     'http' => array(
+//     'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+//     'method' => 'POST',
+//     'content' => http_build_query($obj)
+//     )
+//     );
+//     $context = stream_context_create($options);
+//     $result = file_get_contents($url, false, $context);
+    
+//     $validar = json_decode($result);
+
 // Valores enviados desde el formulario
 if ( !isset($_POST["nombre"]) || !isset($_POST["email"]) || !isset($_POST["mensaje"]) || !isset($_POST["telefono"]) ) {
     die ("Es necesario completar todos los datos del formulario");
